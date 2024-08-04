@@ -1,26 +1,44 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="wrapper">
+    <PortfolioHeader />
+      <RouterView />
+    <PortfolioFooter />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import PortfolioHeader from './components/PortfolioHeader/PortfolioHeader.vue'
+import PortfolioFooter from './components/PortfolioFooter/PortfolioFooter.vue'
+// import ProjectSection from './components/ProjectSection/ProjectSection.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    PortfolioHeader,
+    PortfolioFooter,
+    // ProjectSection
+  },
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Montserrat;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+body {
+  padding: 0 !important;
+  margin: 5px !important;
+  background-color: black;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
 }
 </style>
