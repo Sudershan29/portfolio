@@ -2,13 +2,18 @@
     <div class="home-body">
         <h1>Main Home</h1>
     </div>
+    <div>
+        <ProjectSection />
+    </div>
 </template>
 
 <script>
+
+import ProjectSection from './components/ProjectSection/ProjectSection.vue';
 export default {
     name: 'MainHome',
     components: {
-
+        ProjectSection
     }
 }
 </script>

@@ -1,18 +1,20 @@
 <template>
     <div class="header">
         <div class="header-content">
-            <div class="logo">
-                <img id="website-logo" alt="Vue logo" src="../../assets/sudershan-sridhar-2.jpeg">
-            </div>
+            <RouterLink to="/">
+                <div class="logo">
+                    <img id="website-logo" alt="Vue logo" src="@/assets/sudershan-sridhar-2.jpeg">
+                </div>
+            </RouterLink>
 
             <!-- All links -->
             <nav class="desktop-nav">
                 <RouterLink class="router-link" to="/">Home</RouterLink>
-                <RouterLink class="router-link" to="/photos">Photos</RouterLink>
-                <RouterLink class="router-link" to="/project">Projects</RouterLink>
-                <RouterLink class="router-link" to="/profile">Profile</RouterLink>
-                <RouterLink class="router-link" to="/interests">Interests</RouterLink>
-                <RouterLink class="router-link" to="/random">Random</RouterLink>
+                <!-- <RouterLink class="router-link" to="/photos">Photos</RouterLink> -->
+                <!-- <RouterLink class="router-link" to="/project">Projects</RouterLink> -->
+                <RouterLink class="router-link" to="/experience">Experience</RouterLink>
+                <!-- <RouterLink class="router-link" to="/interests">Interests</RouterLink>
+                <RouterLink class="router-link" to="/random">Random</RouterLink> -->
             </nav>
 
             <!-- Mobile nav -->
@@ -39,6 +41,8 @@
 </template>
 
 <script>
+import { RouterLink } from 'vue-router';
+
 export default {
     data() {
         return {
