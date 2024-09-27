@@ -6,6 +6,11 @@ import MainHome from './MainHome.vue'
 import MainExperience from './MainExperience.vue'
 import MainProject from './MainProject.vue'
 
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+AOS.init();
+
 import { createBootstrap } from 'bootstrap-vue-next'
 
 // Add the necessary CSS

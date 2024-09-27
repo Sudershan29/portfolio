@@ -6,20 +6,20 @@
         <BCard
             header="featured"
             :title="title"
-            :img-src="require('@/assets/project-template.gif')"
+            :img-src="getProjectImage(id)"
             :img-alt="title"
             tag="article"
-            style="max-width: 100rem; background-color: #f4f4f4;"
+            class="project-card"
             >
             <template #header>
                 <BContainer>
-                    <BRow style="margin-right: 5px">
-                        <BCol lg="1">
+                    <BRow>
+                        <BCol xl="1">
                             <a :href="githubLink" target="_blank">
                                 <img src="@/assets/notion.png" class="logo"/>
                             </a>
                         </BCol>
-                        <BCol offset="10" lg="1">
+                        <BCol offset="9" xl="1">
                             <a :href="githubLink" target="_blank">
                                 <img src="@/assets/github.png" class="logo"/>
                             </a>
@@ -27,10 +27,10 @@
                     </BRow>
                 </BContainer>
             </template>
-            <BCardText>{{ description }}</BCardText>
+            <BCardText class="description">{{ description }}</BCardText>
             <template #footer>
                 <BContainer>
-                    <BRow>
+                    <BRow align-h="center" align-content="center">
                         <FrameworkIcon
                             v-for="framework in techStack"
                             :key="framework"
@@ -64,13 +64,39 @@
             BRow,
             BCol,
             BContainer
+        },
+        methods: {
+            getProjectImage(id) {
+                const extensions = ['jpg', 'png', 'gif'];
+                for (const ext of extensions) {
+                    try {
+                        return require(`@/assets/project/${id}.${ext}`);
+                    } catch (e) {
+                        continue;
+                    }
+                }
+                return null; // Return null if no matching image is found
+            },
         }
     };
 </script>
 
 <style scoped>
-.logo{
+.logo {
     width: 20px;
     height: 20px;
+}
+
+.project-card {
+    width: 20rem;
+    height: 40rem;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+}
+
+.description {
+    flex-grow: 1;
+    overflow-y: auto;
 }
 </style>

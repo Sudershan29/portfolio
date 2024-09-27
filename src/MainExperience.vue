@@ -17,6 +17,8 @@
                 :startDate="experience.startDate" 
                 :endDate="experience.endDate" 
                 :description="experience.description"
+                :techStack="experience.techStack"
+                :isVisible="true"
             />
         </BContainer>
     </div>

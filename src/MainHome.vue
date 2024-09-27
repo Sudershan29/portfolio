@@ -1,6 +1,6 @@
 <template>
     <div class="home-body">
-        <h1>Main Home</h1>
+        <HomePage />
     </div>
     <div>
         <ProjectSection />
@@ -10,10 +10,12 @@
 <script>
 
 import ProjectSection from './components/ProjectSection/ProjectSection.vue';
+import HomePage from './components/HomePage/HomePage.vue'
 export default {
     name: 'MainHome',
     components: {
-        ProjectSection
+        ProjectSection,
+        HomePage
     }
 }
 </script>

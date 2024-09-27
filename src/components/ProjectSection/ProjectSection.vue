@@ -6,7 +6,7 @@ import 'vue3-carousel/dist/carousel.css'
 
 import { getProjectList } from '@/mock/api/Project'
 
-export default defineComponent({
+export default {
     name: 'ProjectSection',
     data() {
         return {
@@ -28,7 +28,7 @@ export default defineComponent({
     beforeMount() {
         this.fetchProjectList()
     },
-})
+}
 </script>
 
 <template>

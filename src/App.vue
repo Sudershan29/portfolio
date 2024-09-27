@@ -24,6 +24,8 @@ export default {
 
 <style>
 #app {
+  @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
   font-family: Montserrat;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -31,6 +33,7 @@ export default {
   color: #2c3e50;
 }
 body {
+  font-family: 'Montserrat';
   padding: 0 !important;
   margin: 5px !important;
   background-color: black;

@@ -65,6 +65,7 @@ export default {
     padding: 10px;
     border-radius: 10px;
     margin: 3px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .header-content {
@@ -131,6 +132,7 @@ export default {
     box-shadow: -5px 0px 15px rgba(0, 0, 0, 0.1);
     transition: all 1s ease;
     display: flex;
+    font-family: 'Montserrat', sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -154,6 +156,7 @@ export default {
     color: inherit;
     font-weight: bold;
     color: #f4f4f4;
+    font-family: 'Montserrat', sans-serif;
 }
 </style>
 
