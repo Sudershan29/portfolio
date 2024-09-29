@@ -1,0 +1,15 @@
+:root {
+	--color-background-primary: #f4f4f4;
+	--color-background-secondary: #ffffffdc;
+	--color-accent: #e77328;
+	--color-border: #e0e0e0;
+	--color-text-primary: #212121;
+}
+  
+[data-theme="friend"] {
+	--color-background-primary: #121212;
+	--color-background-secondary: #f4f4f4;
+	--color-accent: #e77328;
+	--color-border: #2e2e2e;
+	--color-text-primary: #fff;
+}

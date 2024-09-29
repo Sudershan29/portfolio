@@ -2,7 +2,7 @@
     <div class="home-body">
         <HomePage />
     </div>
-    <div>
+    <div v-if:="$store.getters.isWorkMode">
         <ProjectSection />
     </div>
 </template>

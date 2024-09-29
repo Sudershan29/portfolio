@@ -51,21 +51,19 @@ export default {
 }
 </script>
 
-<style scoped>
-.experience__section {
-  background: #121212;
-  border-radius: 10px;
-  margin: 3px;
-  min-height: 100vh;
-  padding: 40px;
-}
-.section__title{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-    color: #f4f4f4;
-    padding-top: 10px;
-}
+<style lang="sass" scoped>
+.experience__section
+  background: var(--color-background-primary)
+  border-radius: 10px
+  margin: 3px
+  min-height: 100vh
+  padding: 40px
 
+.section__title
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: flex-end
+  color: var(--color-text-primary)
+  padding-top: 10px
 </style>

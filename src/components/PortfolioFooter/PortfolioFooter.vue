@@ -11,32 +11,31 @@
     </div>
 </template>
 
-<style scoped>
-.footer {
-    background: #121212;
-    color: #f4f4f4;
-    box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    margin: 0 auto;
-    border-radius: 10px;
-    margin: 3px;
-}
-.footer-content{
-    display: flex;
-    justify-content: space-between;
-}
-.logo{
-    width: 35px;
-    height: 35px;
-}
-.social-links{
-    padding: 5px;
-    display: flex;
-    gap: 10px;
-}
-.footer-credits{
-    font-size: 12px;
-    padding-top: 15px;
-    padding-left: 5px;
-}
+<style lang="sass" scoped>
+.footer
+    background: var(--color-background-primary)
+    color: var(--color-text-primary)
+    box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.1)
+    padding: 10px
+    margin: 0 auto
+    border-radius: 10px
+    margin: 3px
+
+    &-content
+        display: flex
+        justify-content: space-between
+
+    &-credits
+        font-size: 12px
+        padding-top: 15px
+        padding-left: 5px
+
+.logo
+    width: 35px
+    height: 35px
+
+.social-links
+    padding: 5px
+    display: flex
+    gap: 10px
 </style>

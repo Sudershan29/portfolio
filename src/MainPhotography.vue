@@ -1,12 +1,12 @@
 <template>
-    <div class="project-body">
-        <h1>PROJECT {{ $route.params.id }}</h1>
+    <div class="photography-body">
+        <h1>Photography</h1>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'MainProject',
+    name: 'MainPhotography',
     components: {
 
     }
@@ -15,7 +15,7 @@ export default {
 
 
 <style scoped lang="sass">
-.project-body
+.photography-body
   display: flex
   justify-content: center
   align-items: center
