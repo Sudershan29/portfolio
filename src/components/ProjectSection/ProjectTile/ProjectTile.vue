@@ -14,12 +14,12 @@
             <template #header>
                 <BContainer>
                     <BRow>
-                        <BCol xl="1">
+                        <BCol xs="1">
                             <a :href="githubLink" target="_blank">
                                 <img src="@/assets/notion.png" class="logo"/>
                             </a>
                         </BCol>
-                        <BCol offset="9" xl="1">
+                        <BCol offset="8" xs="1">
                             <a :href="githubLink" target="_blank">
                                 <img src="@/assets/github.png" class="logo"/>
                             </a>
@@ -33,7 +33,7 @@
                         {{ description }}
                     </BRow>
                     <BRow>
-                        <BCol offset="8" md="4">
+                        <BCol offset="8" xs="4">
                             <!-- TODO: Fix this hover -->
                             <div :class="getStyle(status)" id="status" :title="getStatusTooltip(status)">
                                 {{ status }}
@@ -131,21 +131,21 @@
   background: green
   color: white
   border-radius: 15px
-  min-width: 70px
+  min-width: 10px
   box-shadow: #000 20px
 
 .rounded-pending-button
   background: yellow
   color: black
   border-radius: 15px
-  min-width: 70px
+  min-width: 10px
   box-shadow: #000 20px
 
 .rounded-start-button
   background: red
   color: white
   border-radius: 15px
-  min-width: 70px
+  min-width: 10px
   box-shadow: #000 20px
 
 #hover-content
