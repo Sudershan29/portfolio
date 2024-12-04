@@ -8,6 +8,7 @@ import MainExperience from './MainExperience.vue'
 import MainProject from './MainProject.vue'
 import MainPhotography from './MainPhotography.vue';
 import MainActivity from './MainActivity.vue';
+import MainMaps from './MainMaps.vue';
 import store from './store'
 
 import AOS from 'aos'
@@ -27,6 +28,7 @@ const routes = [
     { path: '/photography', component: MainPhotography },
     { path: '/activity', component: MainActivity },
     { path: '/project/:id', component: MainProject },
+    { path: '/maps', component: MainMaps },
 ]
 
 const router = createRouter({

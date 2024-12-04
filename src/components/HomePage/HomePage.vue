@@ -25,6 +25,11 @@
                     <span class="theme-icon" v-tooltip="'Personal Mode'">🤝</span>
                   </BCol>
               </BRow>
+              <BRow>
+                <p style="font-size: 10px; text-transform: none;">
+                  Toggle to checkout my {{ $store.getters.isWorkMode ? "Personal" : "Work" }} mode
+                </p>
+              </BRow>
             </BContainer>
         </div>
           <div class="background-image">
@@ -100,6 +105,10 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+.theme-toggle
+  border-radius: 1px
+  border-width: 2px solid black
+
 .portfolio-container
   min-height: 100vh
   color: white

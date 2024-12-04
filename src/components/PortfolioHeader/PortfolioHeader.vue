@@ -24,6 +24,8 @@
                     <RouterLink v-if:="$store.getters.isWorkMode" class="router-link" to="/experience"><p class="router-text">Experience</p></RouterLink>
                     <RouterLink v-if:="$store.getters.isNotWorkMode" class="router-link" to="/photography"><p class="router-text">Photography</p></RouterLink>
                     <RouterLink v-if:="$store.getters.isNotWorkMode" class="router-link" to="/activity"><p class="router-text">Activities</p></RouterLink>
+                    <RouterLink v-if:="$store.getters.isNotWorkMode" class="router-link" to="/maps"><p class="router-text">Maps</p></RouterLink>
+                    <a class="router-link" style="color: #e77328" v-if:="$store.getters.isWorkMode" href="https://drive.google.com/file/d/1DhtXoEjVgcqTgAbIMkZ2xvs7mD1bfGXi/view?usp=sharing" target="_blank">Resume</a>
                 </nav>
 
                 <!-- Mobile nav -->
@@ -43,6 +45,7 @@
                     <RouterLink v-if:="$store.getters.isWorkMode" class="router-link" to="/experience"><p class="router-text">Experience</p></RouterLink>
                     <RouterLink v-if:="$store.getters.isNotWorkMode" class="router-link" to="/photography"><p class="router-text">Photography</p></RouterLink>
                     <RouterLink v-if:="$store.getters.isNotWorkMode" class="router-link" to="/activity"><p class="router-text">Activities</p></RouterLink>
+                    <RouterLink v-if:="$store.getters.isNotWorkMode" class="router-link" to="/maps"><p class="router-text">Maps</p></RouterLink>
                 </div>
 
             </BCol>
